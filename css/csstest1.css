@@ -1,0 +1,20 @@
+body{
+    background-color: #d0e4fe;
+}
+h1{
+    color:orange;
+    text-align: center;
+}
+#itcolor{
+    color:rgb(67, 30, 200);
+}
+p.Myclass{
+    color:red;
+}
+p{
+    color:yellow;
+}
+::selection{
+    background-color: black;
+    color:#d0e4fe;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>合法与非法样式</title>
+        <style type="text/css">
+            input:valid{
+                border: 2px solid green;
+            }
+
+            input:invalid{
+                border: 2px solid red;
+            }
+            input:in-range{
+                border: 2px solid green;
+            }
+            input:out-of-range{
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="email" placeholder="请输入邮箱^o^">
+            <button type="submit">提交</button>
+            <br><br>
+            <input type="number" min="0" max="99" value="66">
+            <button type="submit">提交</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UI伪类选择器</title>
+        <style type="text/css">
+            :required{
+                outline: 3px solid red;
+            }
+            :optional{
+                outline: 3px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>
+                <label for="required">必填：</label>
+                <input type="text" required>
+            </p>
+            <p>
+                <label for="optional">可选：</label>
+                <input type="text">
+            </p>
+            <button type="submit">提交</button>
+        </form>
+    </body>
+</html>

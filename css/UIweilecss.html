@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UI伪类选择器</title>
+        <style text="text/css">
+            :enabled{
+                outline: 1px solid green;
+            }
+            :disabled{
+                background-color: #dddddd;
+            }
+            :checked+span{
+                background-color: red;
+                color:#dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>
+                <label for="enabled">可用的：</label>
+                <input type="text" name="enabled">
+            </p>
+            <p>
+                <lable for="disabled">禁用的：</lable>
+                <input type="text" name="disabled" disabled>
+            </p>
+            <button>可用的按钮</button>
+            <button disabled>不可用按钮</button>
+            <br><br>
+            <input type="checkbox" id="fruit" value="banana"><span>香蕉</span> 
+        </form>
+    </body>
+</html>
