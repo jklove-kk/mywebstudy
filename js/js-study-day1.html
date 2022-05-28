@@ -39,25 +39,40 @@
             //     }
             // }
 
-            var Dog={
-                Name:'keke',
-                Type:'阿拉斯加',
-                age:5,
-                color:'棕红色',
-                skill:
-                function(){
-                    console.log('bark'+'\n'+'showFilm');
+            // var Dog={
+            //     Name:'keke',
+            //     Type:'阿拉斯加',
+            //     age:5,
+            //     color:'棕红色',
+            //     skill:
+            //     function(){
+            //         console.log('bark'+'\n'+'showFilm');
+            //     }
+            // }
+            // Dog.skill();
+            
+            // 构造函数创造对象
+            var ceishi1='jklove';
+            var ceishi2='M';
+            var ceishi3=18;
+            function Name(shicang1,shicang2,shicang3)
+            {
+                this.shuxing1=shicang1;
+                this.shuxing2=shicang2;
+                this.shuxing3=shicang3;
+                this.fanfa=function(){
+                    console.log(this.shuxing1+'\n'+this.shuxing2+'\n'+this.shuxing3);
                 }
             }
-            Dog.skill();
+            //采用new创建对象
+           
+            var obj= new Name(ceishi1,ceishi2,ceishi3);
+            console.log( obj.shuxing1);
+            obj.fanfa();
+            
           
 
 
-
-
-
-
-            
         </script>
     </head>
     <body>
